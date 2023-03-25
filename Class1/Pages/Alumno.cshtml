@@ -1,0 +1,26 @@
+@page
+@model AlumnoModel
+@{
+    var listAlumno = new List<string>();
+        listAlumno.Add("Santiago");
+        listAlumno.Add("Guido");
+        listAlumno.Add("Camilo");
+        listAlumno.Add("Mayte");
+        listAlumno.Add("Andrea");
+        listAlumno.Add("Zahir");
+
+        foreach (var item1 in listAlumno)
+        {
+            <li>@item1</li>
+        }
+}
+
+<h1>Esta es la pagina de alumno</h1>
+<h1>manuel.fondovila@@istea.com.ar</h1>
+
+<ol>
+    @foreach (var item in listAlumno)
+    {
+        <li>@item</li>
+    }
+</ol>
